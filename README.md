@@ -7,7 +7,7 @@ Module 1 respository for lab
 **Aim:**  
 To write a C program that reads an integer value and displays its corresponding ASCII character.
 
----
+
 
 **Algorithm:**  
 1. Start the program.  
@@ -16,7 +16,6 @@ To write a C program that reads an integer value and displays its corresponding 
 4. Use the `printf()` function to display the corresponding ASCII character of the entered number using `%c` format specifier.  
 5. End the program.
 
----
 
 **Source Code:**
 ```c
@@ -34,7 +33,8 @@ int main()
 <img width="780" height="199" alt="image" src="https://github.com/user-attachments/assets/ed1ffff5-9456-476c-b00b-87bcc8810f8a" />
 
 
-**Result\n**
+
+**Result:**
 The program successfully prints the character corresponding to the given ASCII value.
 ---
 
@@ -43,7 +43,7 @@ The program successfully prints the character corresponding to the given ASCII v
 **Aim:**  
 To write a C program that checks whether the input number is equal to 000.
 
----
+
 
 **Algorithm:**  
 1. Start the program.  
@@ -54,7 +54,7 @@ To write a C program that checks whether the input number is equal to 000.
    - Otherwise → print "Number is NOT equal to 000".  
 5. End the program.
 
----
+
 
 **Source Code:**
 ```c
@@ -72,15 +72,18 @@ int main()
 ```
 **output**
 <img width="698" height="250" alt="image" src="https://github.com/user-attachments/assets/5d7c460d-0b7b-4d8b-8d71-7134dd76bf13" />
-**Result**
+
+
+
+**Result:**
 The program correctly checks whether the entered number is 000 and displays the appropriate message.
+
 ---
 3.# Program: Simple and Compound Interest Calculation
 
 **Aim:**  
 To write a C program that calculates both the Simple Interest (SI) and Compound Interest (CI) for a given principal, rate of interest, and time period.
 
----
 
 **Algorithm:**  
 1. Start the program.  
@@ -91,7 +94,7 @@ To write a C program that calculates both the Simple Interest (SI) and Compound 
 6. Print the calculated SI and CI using `printf()`.  
 7. End the program.
 
----
+
 
 **Source Code:**
 ```c
@@ -117,7 +120,9 @@ int main()
 ```
 **output**
 <img width="736" height="140" alt="image" src="https://github.com/user-attachments/assets/8e45d22b-70b2-4fbb-af6a-c0ce5f74caa6" />
-**Result:\n**
+
+
+**Result:**
 
 The program correctly calculates and displays the Simple Interest and Compound Interest for the given inputs.
 ---
@@ -126,7 +131,7 @@ The program correctly calculates and displays the Simple Interest and Compound I
 **Aim:**  
 To write a C program that performs basic arithmetic operations (`+` and `-`) on two numbers using a switch statement.
 
----
+
 
 **Algorithm:**  
 1. Start the program.  
@@ -138,7 +143,7 @@ To write a C program that performs basic arithmetic operations (`+` and `-`) on 
    - Default → Print "Invalid Input" if the operator is not recognized.  
 5. End the program.
 
----
+
 
 **Source Code:**
 ```c
@@ -165,8 +170,62 @@ int main()
 **output**
 <img width="459" height="294" alt="image" src="https://github.com/user-attachments/assets/36dc10bd-ebe5-47ae-970e-c0e5b78a1677" />
 
-**Result:\n**
+
+**Result:**
 The program successfully performs addition or subtraction based on the operator entered by the user and displays the correct result.
+---
+
+5.# Program: Grade Evaluation Based on Marks
+
+**Aim:**  
+To write a C program that reads a student's marks and prints the corresponding grade message.
+
+
+**Algorithm:**  
+1. Start the program.  
+2. Declare an integer variable `marks`.  
+3. Read the marks from the user using `scanf()`.  
+4. Use `if-else if-else` statements to determine the grade:  
+   - Marks ≥ 70 → "VERY GOOD"  
+   - 60 ≤ Marks < 70 → "GOOD"  
+   - 50 ≤ Marks < 60 → "ABOVE AVERAGE"  
+   - 40 ≤ Marks < 50 → "AVERAGE"  
+   - Marks < 40 → "NEED TO IMPROVE"  
+5. Print the corresponding grade message.  
+6. End the program.
+
+
+
+**Source Code:**
+```c
+#include <stdio.h>
+int main()
+{
+    int marks;
+    scanf("%d", &marks);
+
+    if (marks >= 70)
+        printf("VERY GOOD");
+    else if (marks >= 60)
+        printf("GOOD");
+    else if (marks >= 50)
+        printf("ABOVE AVERAGE");
+    else if (marks >= 40)
+        printf("AVERAGE");
+    else
+        printf("NEED TO IMPROVE");
+
+    return 0;
+}
+```
+**output**
+<img width="475" height="291" alt="image" src="https://github.com/user-attachments/assets/feb0daa9-8d10-43f7-a525-73cf950872b9" />
+
+**Result:**
+
+The program correctly evaluates the marks and displays the corresponding grade message.
+
+
 
 
 
