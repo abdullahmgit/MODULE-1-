@@ -38,5 +38,44 @@ int main()
 The program successfully prints the character corresponding to the given ASCII value.
 ---
 
-2.
+2.# Program: Check if Number is Equal to 000
+
+**Aim:**  
+To write a C program that checks whether the input number is equal to 000.
+
+---
+
+**Algorithm:**  
+1. Start the program.  
+2. Declare an integer variable `num`.  
+3. Read an integer input from the user using `scanf()`.  
+4. Use an `if` statement to compare the number with `000`.  
+   - If equal → print "Number is equal to 000".  
+   - Otherwise → print "Number is NOT equal to 000".  
+5. End the program.
+
+---
+
+**Source Code:**
+```c
+#include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    if(num == 000)
+        printf("Number is equal to 000");
+    else
+        printf("Number is NOT equal to 000");
+    return 0;
+}
+```
+**output**
+<img width="698" height="250" alt="image" src="https://github.com/user-attachments/assets/5d7c460d-0b7b-4d8b-8d71-7134dd76bf13" />
+**Result**
+The program correctly checks whether the entered number is 000 and displays the appropriate message.
+---
+
+3. 
+
 
