@@ -75,7 +75,98 @@ int main()
 **Result**
 The program correctly checks whether the entered number is 000 and displays the appropriate message.
 ---
+3.# Program: Simple and Compound Interest Calculation
 
-3. 
+**Aim:**  
+To write a C program that calculates both the Simple Interest (SI) and Compound Interest (CI) for a given principal, rate of interest, and time period.
+
+---
+
+**Algorithm:**  
+1. Start the program.  
+2. Declare float variables `principle`, `Year`, `rate`, `SI`, and `CI`.  
+3. Read input values for principal, time (in years), and rate of interest using `scanf()`.  
+4. Calculate **Simple Interest** using the formula:  
+(Use `pow()` from `math.h` for exponentiation)  
+6. Print the calculated SI and CI using `printf()`.  
+7. End the program.
+
+---
+
+**Source Code:**
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ float principle, Year, rate, CI, SI;
+ 
+ scanf("%f", &principle);
+ scanf("%f", &Year);
+ scanf("%f", &rate);
+ 
+ SI = (principle * Year * rate) / 100;
+ printf("Simple Interest = %.2f \n", SI);
+ 
+ CI = principle * (pow((1 + rate / 100), Year));
+ printf("Compound Interest = %.2f \n", CI);
+ 
+ return 0;
+}
+```
+**output**
+<img width="736" height="140" alt="image" src="https://github.com/user-attachments/assets/8e45d22b-70b2-4fbb-af6a-c0ce5f74caa6" />
+**Result:\n**
+
+The program correctly calculates and displays the Simple Interest and Compound Interest for the given inputs.
+---
+4.# Program: Arithmetic Operations Using Switch Statement
+
+**Aim:**  
+To write a C program that performs basic arithmetic operations (`+` and `-`) on two numbers using a switch statement.
+
+---
+
+**Algorithm:**  
+1. Start the program.  
+2. Declare integer variables `num1` and `num2` for storing numbers, and a character variable `op` for the operator.  
+3. Read input values for `num1`, `op`, and `num2` using `scanf()`.  
+4. Use a `switch` statement to evaluate the operator:  
+   - Case `'+'` → Add `num1` and `num2` and print the result.  
+   - Case `'-'` → Subtract `num2` from `num1` and print the result.  
+   - Default → Print "Invalid Input" if the operator is not recognized.  
+5. End the program.
+
+---
+
+**Source Code:**
+```c
+#include <stdio.h>
+int main()
+{
+    int num1, num2;
+    char op;
+    scanf("%d %c %d", &num1, &op, &num2);
+    
+    switch (op) {
+        case '+' :
+            printf("Result = %d", num1 + num2);
+            break;
+        case '-' :
+            printf("Result = %d", num1 - num2);
+            break;
+        default :
+            printf("Invalid Input");
+    }
+    return 0;
+}
+```
+**output**
+<img width="459" height="294" alt="image" src="https://github.com/user-attachments/assets/36dc10bd-ebe5-47ae-970e-c0e5b78a1677" />
+
+**Result:\n**
+The program successfully performs addition or subtraction based on the operator entered by the user and displays the correct result.
+
 
 
